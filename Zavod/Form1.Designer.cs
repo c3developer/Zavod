@@ -40,7 +40,10 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.screw = new System.Windows.Forms.Label();
+            this.big_door = new System.Windows.Forms.Label();
+            this.small_door = new System.Windows.Forms.Label();
+            this.shelf = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -146,21 +149,52 @@
             this.button3.Text = "Удалить";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // screw
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(138, 297);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "label7";
+            this.screw.AutoSize = true;
+            this.screw.Location = new System.Drawing.Point(94, 65);
+            this.screw.Name = "screw";
+            this.screw.Size = new System.Drawing.Size(38, 15);
+            this.screw.TabIndex = 16;
+            this.screw.Text = "label7";
+            this.screw.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // big_door
+            // 
+            this.big_door.AutoSize = true;
+            this.big_door.Location = new System.Drawing.Point(121, 92);
+            this.big_door.Name = "big_door";
+            this.big_door.Size = new System.Drawing.Size(38, 15);
+            this.big_door.TabIndex = 17;
+            this.big_door.Text = "label8";
+            // 
+            // small_door
+            // 
+            this.small_door.AutoSize = true;
+            this.small_door.Location = new System.Drawing.Point(124, 121);
+            this.small_door.Name = "small_door";
+            this.small_door.Size = new System.Drawing.Size(38, 15);
+            this.small_door.TabIndex = 18;
+            this.small_door.Text = "label9";
+            // 
+            // shelf
+            // 
+            this.shelf.AutoSize = true;
+            this.shelf.Location = new System.Drawing.Point(72, 151);
+            this.shelf.Name = "shelf";
+            this.shelf.Size = new System.Drawing.Size(38, 15);
+            this.shelf.TabIndex = 19;
+            this.shelf.Text = "label7";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.shelf);
+            this.Controls.Add(this.small_door);
+            this.Controls.Add(this.big_door);
+            this.Controls.Add(this.screw);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox4);
@@ -193,6 +227,9 @@
         private TextBox textBox4;
         private Button button2;
         private Button button3;
-        private Label label7;
+        private Label screw;
+        private Label big_door;
+        private Label small_door;
+        private Label shelf;
     }
 }
